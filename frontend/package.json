@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
+    "build-dev": "rsbuild build --watch",
     "lint": "biome check src/",
     "preview": "rsbuild preview"
   },

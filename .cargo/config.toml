@@ -1,5 +1,6 @@
 [alias]
 loco = "run --"
 loco-tool = "run --"
+dev = "watch -x check -- cargo loco start"
 
 playground = "run --example playground"
