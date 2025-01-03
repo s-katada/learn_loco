@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    z-index: 1;
+}
+
+.logo-image {
+    width: 8vw !important;
+    height: 10vh;
+}
+
+.content {
+    background-image: url('./assets/piano.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    filter: brightness(80%);
+}
+
+.footer {
+    background-color: white;
+}
+
+.menu {
+    background-color: transparent;
+    float: right;
+    border: none;
+}
+
+.menu-item {
+    width: 15vw !important;
+    text-align: center;
+    color: #fff;
+}
+
+.content-description {
+    height: inherit;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #bfa478;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); // シャドウの設定
+    font-family: serif;
+    font-size: x-large
+}
