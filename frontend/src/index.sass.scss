@@ -1,54 +1,106 @@
-body {
+body, h1, h2, p {
     margin: 0;
 }
 
+h2 {
+    font-style: italic;
+    font-family: serif;
+}
+
+iframe {
+    width: 80vw;
+    height: 50vh;
+    border: 0;
+}
+
+.span {
+    font-size: xx-small;
+    display: inline-block;
+    width: 100vw;
+}
+
 .header {
+    width: 100%;
     position: fixed;
     background-color: transparent;
-    width: 100%;
     border: none;
     z-index: 1;
 }
 
-.logo-image {
-    width: 8vw !important;
-    height: 10vh;
+.menu {
+    background-color: transparent;
+    border: none;
 }
 
-.content {
+.menu-item {
+    text-align: center;
+    color: gray !important;
+}
+
+.home-image {
     background-image: url('./assets/piano.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: auto;
-    filter: brightness(80%);
+    filter: brightness(100%);
+    position: relative;
+}
+
+.home-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: serif;
+    font-size: 5vh;
+}
+
+.about {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.place {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.contact {
+    margin-top: 3vh;
+    text-align: center;
+    vertical-align: auto;
+}
+
+.form {
+    width: 50%;
+    display: inline-block;
 }
 
 .footer {
     background-color: white;
 }
 
-.menu {
-    background-color: transparent;
-    float: right;
-    border: none;
+.line {
+    text-align: center;
+    margin-top: 3vh;
 }
 
-.menu-item {
-    width: 15vw !important;
-    text-align: center;
-    color: #fff;
+.line p {
+    margin-bottom: 1vh;
 }
 
-.content-description {
-    height: inherit;
+.line img {
+    width: 6vw !important;
+    margin-bottom: 1vh;
+}
+
+.copyright {
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    color: #bfa478;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); // シャドウの設定
-    font-family: serif;
-    font-size: x-large
+    font-size: small;
+    color: gray;
 }
