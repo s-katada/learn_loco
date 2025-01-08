@@ -1305,6 +1305,33 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fea41bba32d969b513997752735605054bc0dfa92b4c56bf1189f2e174be7a10"
 
 [[package]]
+name = "donguri_piano"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "axum 0.7.9",
+ "chrono",
+ "fluent-templates",
+ "include_dir",
+ "insta",
+ "loco-rs",
+ "migration",
+ "rstest",
+ "sea-orm",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "shuttle-axum",
+ "shuttle-runtime",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
+ "unic-langid",
+ "uuid",
+ "validator",
+]
+
+[[package]]
 name = "dotenvy"
 version = "0.15.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2493,33 +2520,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 dependencies = [
  "spin",
-]
-
-[[package]]
-name = "learn_loco"
-version = "0.1.0"
-dependencies = [
- "async-trait",
- "axum 0.7.9",
- "chrono",
- "fluent-templates",
- "include_dir",
- "insta",
- "loco-rs",
- "migration",
- "rstest",
- "sea-orm",
- "serde",
- "serde_json",
- "serial_test",
- "shuttle-axum",
- "shuttle-runtime",
- "tokio",
- "tracing",
- "tracing-subscriber",
- "unic-langid",
- "uuid",
- "validator",
 ]
 
 [[package]]

@@ -1,4 +1,4 @@
-use learn_loco::app::App;
+use donguri_piano::app::App;
 #[allow(unused_imports)]
 use loco_rs::{cli::playground, prelude::*};
 

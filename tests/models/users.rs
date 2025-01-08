@@ -1,5 +1,5 @@
 use insta::assert_debug_snapshot;
-use learn_loco::{
+use donguri_piano::{
     app::App,
     models::users::{self, Model, RegisterParams},
 };

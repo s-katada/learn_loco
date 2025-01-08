@@ -1,4 +1,4 @@
-use learn_loco::app::App;
+use donguri_piano::app::App;
 use loco_rs::cli;
 use migration::Migrator;
 
