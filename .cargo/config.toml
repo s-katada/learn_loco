@@ -1,5 +1,5 @@
 [alias]
-loco = "run --"
+loco = "run --bin donguri_piano-cli --"
 loco-tool = "run --"
 dev = "watch -x check -- cargo loco start"
 
