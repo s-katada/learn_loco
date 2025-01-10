@@ -12,6 +12,8 @@ async fn main(
         shuttle_runtime::Environment::Local => Environment::Development,
         shuttle_runtime::Environment::Deployment => Environment::Production,
     };
+    // environmentを出力
+    println!("environment: {:?}", environment);
     let boot_result = create_app::<App, Migrator>(StartMode::ServerOnly, &environment)
         .await
         .unwrap();

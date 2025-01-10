@@ -13,8 +13,8 @@ default-run = "donguri_piano-cli"
 loco-rs = { version = "0.13.2" }
 
 [dependencies]
-shuttle-axum = "0.46.0"
-shuttle-runtime = { version = "0.46.0", default-features = false }
+shuttle-axum = "0.50"
+shuttle-runtime = { version = "0.50", default-features = false }
 
 loco-rs = { workspace = true  }
 serde = { version = "1", features = ["derive"] }

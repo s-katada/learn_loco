@@ -1,1 +1,2 @@
-name = "donguri_piano"
+name = "acorn"
+assets = ["frontend/dist/*"]
