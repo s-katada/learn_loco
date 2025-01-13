@@ -1,39 +1,40 @@
-import { Button, Col, Form, Image, Input, Layout, Menu, Row } from "antd";
+import { Button, Col, Form, Image, Input, Layout, Menu, MenuProps, Row } from "antd";
 import line_icon from "./assets/line_icon.png";
+import { useState } from "react";
 const { Header, Content, Footer } = Layout;
 
+type MenuItem = Required<MenuProps>['items'][number];
+
+const menuItems: MenuItem[] = [
+  { label: (<a href="#top">TOP</a>), key: "top" },
+  { label: (<a href="#about">ABOUT</a>), key: "about" },
+  { label: (<a href="#place">PLACE</a>), key: "place" },
+  { label: (<a href="#contact">CONTACT</a>), key: "contact" },
+];
+
 export const Home = () => {
+  const [current, setCurrent] = useState("top");
+  const handleMenuItemClick: MenuProps['onClick'] = (e) => {
+    setCurrent(e.key);
+  };
   return (
     <Layout>
       <Header className='header'>
-        <Menu mode="horizontal" className="menu">
-          <Menu.Item className="menu-item">
-            TOP
-          </Menu.Item>
-          <Menu.Item className='menu-item'>
-            ABOUT
-          </Menu.Item>
-          <Menu.Item className='menu-item'>
-            PLACE
-          </Menu.Item>
-          <Menu.Item className='menu-item'>
-            CONTACT
-          </Menu.Item>
-        </Menu>
+        <Menu mode="horizontal" onClick={handleMenuItemClick} selectedKeys={[current]} className="menu" items={menuItems} />
       </Header>
       <Content>
         <div className="home-image">
           <h1>ゆるやかなメロディに包まれて、ピアノを楽しもう</h1>
         </div>
         <div className="about">
-          <h2>About</h2>
+          <h2 id="about">About</h2>
           <span className="span">- どんぐりピアノ教室について -</span>
           <p>岐阜県中津川市にあるちいさなピアノ教室です。</p>
           <p>本教室では楽しくピアノを弾くことを目指しています。</p>
           <p>初心者の方から経験者まで、どなたでもお気軽にお越しください。</p>
         </div>
         <div className="place">
-          <h2>Place</h2>
+          <h2 id="place">Place</h2>
           <span className="span">- どんぐりピアノ教室の場所 -</span>
           <p>岐阜県中津川市の自宅にてレッスンを行っています。</p>
           <iframe
@@ -41,7 +42,7 @@ export const Home = () => {
             loading="lazy" />
         </div>
         <div className="contact">
-          <h2>Contact</h2>
+          <h2 id="contact">Contact</h2>
           <span className="span">- お問い合わせ -</span>
           <div className="form">
             <Form
