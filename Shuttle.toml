@@ -1,2 +1,14 @@
-name = "acorn"
-assets = ["frontend/dist/*"]
+name = "practice"
+[build]
+assets = [
+    "frontend/dist/*",
+    "config/production.yaml",
+    "assets/*"
+]
+
+[deploy]
+include = [
+    "frontend/dist/*",
+    "config/production.yaml",
+    "assets/*"
+]
