@@ -1,5 +1,5 @@
-use insta::{assert_debug_snapshot, with_settings};
 use donguri_piano::{app::App, models::users};
+use insta::{assert_debug_snapshot, with_settings};
 use loco_rs::testing;
 use rstest::rstest;
 use serial_test::serial;
