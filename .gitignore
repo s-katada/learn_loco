@@ -19,3 +19,5 @@ target/
 .shuttle*
 Secrets*.toml
 /target
+
+.env

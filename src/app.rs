@@ -14,7 +14,7 @@ use sea_orm::DatabaseConnection;
 use std::path::Path;
 
 use crate::{
-    initializers, models::_entities::users, tasks, workers::downloader::DownloadWorker,
+    controllers, initializers, models::_entities::users, tasks, workers::downloader::DownloadWorker,
 };
 
 pub struct App;
@@ -45,7 +45,7 @@ impl Hooks for App {
     }
 
     fn routes(_ctx: &AppContext) -> AppRoutes {
-        AppRoutes::with_default_routes()
+        AppRoutes::with_default_routes().add_route(controllers::discord::routes())
     }
     async fn connect_workers(ctx: &AppContext, queue: &Queue) -> Result<()> {
         queue.register(DownloadWorker::build(ctx)).await?;
