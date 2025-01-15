@@ -1,6 +1,7 @@
 #![allow(clippy::missing_errors_doc)]
 #![allow(clippy::unnecessary_struct_initialization)]
 #![allow(clippy::unused_async)]
+#![allow(clippy::missing_panics_doc)]
 use axum::{body::Body, debug_handler};
 use dotenvy::dotenv;
 use loco_rs::prelude::*;
