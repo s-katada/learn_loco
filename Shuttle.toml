@@ -3,12 +3,14 @@ name = "practice"
 assets = [
     "frontend/dist/*",
     "config/production.yaml",
-    "assets/*"
+    "assets/*",
+    ".env",
 ]
 
 [deploy]
 include = [
     "frontend/dist/*",
     "config/production.yaml",
-    "assets/*"
+    "assets/*",
+    ".env",
 ]
