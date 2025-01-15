@@ -41,6 +41,8 @@ include_dir = "0.7"
 fluent-templates = { version = "0.8.0", features = ["tera"] }
 unic-langid = "0.9.4"
 shuttle-shared-db = { version = "0.50.0", features = ["postgres"] }
+serenity = "0.12.4"
+dotenvy = "0.15.7"
 # /view engine
 
 [[bin]]
